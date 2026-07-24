@@ -12,6 +12,8 @@ jobs:
     steps:
       - name: Descargar el código fuente
         uses: actions/checkout@v4
+        with:
+          submodules: false
 
       - name: Configurar Node.js
         uses: actions/setup-node@v4
