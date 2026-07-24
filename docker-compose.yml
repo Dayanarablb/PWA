@@ -1,0 +1,37 @@
+version: '3.8'
+
+services:
+  db:
+    image: postgres:15
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: 123
+      POSTGRES_DB: pweb
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+      - ./practica-u3/database/script.sql:/docker-entrypoint-initdb.d/init.sql
+
+  backend:
+    build: ./practica-u3
+    ports:
+      - "3000:3000"
+    depends_on:
+      - db
+    environment:
+      - DB_USER=postgres
+      - DB_HOST=db
+      - DB_PASSWORD=123
+      - DB_DATABASE=pweb
+      - DB_PORT=5432
+
+  frontend:
+    build: ./practica-react
+    ports:
+      - "4173:4173"
+    depends_on:
+      - backend
+
+volumes:
+  pgdata:
