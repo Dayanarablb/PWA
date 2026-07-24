@@ -1,0 +1,138 @@
+.contenedor {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.titulo {
+    text-align: center;
+    color: rgb(16, 3, 209);
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+.subtitulo {
+    text-align: center;
+    color: #666;
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+.formulario {
+    background-color: #f9f9f9;
+    padding: 30px;
+    border-radius: 10px;
+    border: 2px solid rgb(93, 86, 189);
+}
+
+.grupoFormulario {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.label {
+    color: rgb(93, 86, 189);
+    font-weight: bold;
+    margin-bottom: 8px;
+    font-size: 14px;
+}
+
+.input,
+.textarea {
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+    font-family: Arial, sans-serif;
+}
+
+.input:focus,
+.textarea:focus {
+    outline: none;
+    border-color: rgb(93, 86, 189);
+    box-shadow: 0 0 5px rgba(93, 86, 189, 0.3);
+}
+
+.textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.boton {
+    background-color: rgb(13, 0, 202);
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.boton:hover {
+    background-color: #7c7cfd;
+}
+
+.infoContacto {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-top: 40px;
+}
+
+.infoItem {
+    text-align: center;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+
+.infoIcon {
+    font-size: 32px;
+    margin-bottom: 10px;
+    display: inline-block;
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    border-radius: 50%;
+    background-color: #e8e6ff;
+    color: rgb(52, 40, 230);
+    text-align: center;
+    margin: 0 auto 10px;
+}
+
+.emailIcon::before {
+    content: "✉";
+}
+
+.phoneIcon::before {
+    content: "☎";
+}
+
+.locationIcon::before {
+    content: "⌖";
+}
+
+.infoTitulo {
+    color: rgb(52, 40, 230);
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.infoTexto {
+    color: #666;
+    font-size: 14px;
+}
+
+@media (max-width: 768px) {
+    .infoContacto {
+        grid-template-columns: 1fr;
+    }
+
+    .titulo {
+        font-size: 28px;
+    }
+}

@@ -1,0 +1,11 @@
+.titulo{
+    text-align: center;
+    color: rgb(93, 86, 189);
+}
+
+.contenedor{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}

@@ -1,0 +1,117 @@
+.contenedor {
+    max-width: 1380px;
+    margin: 0 auto;
+    padding: 40px 20px 80px;
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 15px 40px rgba(69, 84, 245, 0.2);
+
+}
+
+.hero {
+    background: linear-gradient(135deg, #4554f5 0%, #2a3ab8 100%);
+    color: white;
+    padding: 50px 80px;
+    border-radius: 20px;
+    text-align: center;
+    margin-bottom: 50px;
+    box-shadow: 0 10px 30px rgba(69, 84, 245, 0.3);
+}
+
+.titulo {
+    font-size: 3.2rem;
+    margin-bottom: 20px;
+    text-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
+}
+
+.subtitulo {
+    font-size: 1.35rem;
+    opacity: 0.95;
+    margin-bottom: 0;
+}
+
+/* Imagen */
+.imagen {
+    display: block;
+    margin: 0 auto 50px;
+    width: 100%;
+    max-width: 620px;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+    transition: transform 0.4s ease;
+}
+
+.imagen:hover {
+    transform: scale(1.03);
+}
+
+/* Mejor espaciado después de la descripción */
+.descripcion {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    margin-bottom: 70px;        /* ← Aumentado */
+    background: white;
+    padding: 45px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(69, 84, 245, 0.1);
+}
+
+.textos {
+    flex: 1;
+}
+
+.parrafo {
+    color: #333;
+    font-size: 1.1rem;
+    line-height: 1.85;
+    margin-bottom: 18px;
+}
+
+h2 {
+    text-align: center;
+    color: #4554f5;
+    font-size: 2.4rem;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+h2::after {
+    content: '';
+    width: 90px;
+    height: 4px;
+    background: linear-gradient(to right, #4554f5, #c5dd35);
+    display: block;
+    margin: 15px auto;
+    border-radius: 4px;
+}
+
+/* Contenedor de cards */
+.contenedorCards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+    gap: 30px;                    /* Más espacio entre tarjetas */
+    margin-top: 50px;             /* Espacio desde el título "Características" */
+    padding: 20px 0;
+}
+/* Contenedor de cada tarjeta (mejor contención) */
+.contenedorCards > div {
+    margin-bottom: 20px;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .titulo {
+        font-size: 2.4rem;
+    }
+    
+    .descripcion {
+        flex-direction: column;
+        padding: 30px 20px;
+    }
+    
+    .contenedorCards {
+        grid-template-columns: 1fr;
+    }
+}

@@ -1,0 +1,132 @@
+.contenedor {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+/* Títulos */
+.titulo {
+    text-align: center;
+    color: #4554f5;
+    font-size: 3rem;
+    margin-bottom: 12px;
+    font-weight: 700;
+}
+
+.subtitulo {
+    text-align: center;
+    color: #555;
+    font-size: 1.35rem;
+    margin-bottom: 50px;
+}
+
+/* Sección Personal */
+.seccionPersonal {
+    display: grid;
+    grid-template-columns: 380px 1fr;
+    gap: 50px;
+    align-items: start;
+    margin-bottom: 70px;
+    background: white;
+    padding: 45px;
+    border-radius: 20px;
+    box-shadow: 0 10px 35px rgba(69, 84, 245, 0.12);
+}
+
+.cardContenedor {
+    display: flex;
+    justify-content: center;
+}
+
+/* Texto */
+.textoSobreMi {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.parrafo {
+    color: #333;
+    font-size: 1.1rem;
+    line-height: 1.85;
+    text-align: justify;
+}
+
+.parrafoDestacado {
+    background: #f8f9ff;
+    color: #1a1a2e;
+    font-weight: 600;
+    font-size: 1.15rem;
+    padding: 22px 25px;
+    border-left: 6px solid #c5dd35;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(69, 84, 245, 0.08);
+}
+
+/* Sección Información */
+.seccionInfo {
+    background: white;
+    padding: 50px 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 35px rgba(69, 84, 245, 0.1);
+}
+
+.seccionInfo h2 {
+    text-align: center;
+    color: #4554f5;
+    font-size: 2.3rem;
+    margin-bottom: 45px;
+    position: relative;
+}
+
+.seccionInfo h2::after {
+    content: '';
+    width: 90px;
+    height: 4px;
+    background: linear-gradient(to right, #4554f5, #c5dd35);
+    display: block;
+    margin: 15px auto;
+}
+
+/* Info Cards */
+.infoItems {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 25px;
+}
+
+.infoItem {
+    padding: 30px 20px;
+    border-radius: 16px;
+    text-align: center;
+    border: 3px solid #4554f5;
+    transition: all 0.3s ease;
+}
+
+.infoItem:hover {
+    border-color: #c5dd35;
+    transform: translateY(-8px);
+}
+
+.infoLabel {
+    color: #666;
+    font-size: 0.95rem;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.infoValor {
+    color: #1a1a2e;
+    font-size: 2.2rem;
+    font-weight: 700;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .seccionPersonal {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+    .titulo { font-size: 2.4rem; }
+}

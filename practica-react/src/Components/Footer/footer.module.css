@@ -1,0 +1,34 @@
+.footer {
+    background: linear-gradient(135deg, #4554f5 0%, #2a3ab8 100%);
+    color: white;
+    text-align: center;
+    padding: 45px 40px;
+    margin-top: auto;
+    border-top: 4px solid #c5dd35;
+    box-shadow: 0 -8px 25px rgba(69, 84, 245, 0.25);
+    position: relative;
+}
+
+.footer p {
+    margin: 0;
+    font-size: 1.1rem;
+    font-weight: 500;
+    opacity: 0.95;
+    letter-spacing: 0.5px;
+}
+
+.footer p:hover {
+    color: #c5dd35;
+    transition: color 0.3s ease;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .footer {
+        padding: 18px 20px;
+    }
+    
+    .footer p {
+        font-size: 1rem;
+    }
+}

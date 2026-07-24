@@ -1,0 +1,8 @@
+export { InicioPage } from './Inicio'
+export { ContactosPage } from './Contactos'
+export { NosotrosPage } from './Nosotros'
+export { CursosPage } from './Cursos'
+export { PersonajePage } from './Personaje'
+export { LoginPage } from './LoginPage'
+export { RegisterPage } from './RegisterPage'
+export { Productos } from './productos/Productos'

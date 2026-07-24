@@ -1,0 +1,91 @@
+.contenedor {
+    width: 280px;
+    background: white;
+    border: 3px solid #4554f5;
+    border-radius: 20px;
+    padding: 25px 20px;
+    text-align: center;
+    box-shadow: 0 8px 25px rgba(69, 84, 245, 0.12);
+    transition: all 0.3s ease;
+    margin: 0 auto;
+}
+
+.contenedor:hover {
+    border-color: #c5dd35;
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(69, 84, 245, 0.18);
+}
+
+/* Imagen */
+.imagen {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 0 auto 18px;
+    box-shadow: 0 6px 20px rgba(69, 84, 245, 0.2);
+    transition: all 0.3s ease;
+}
+
+.contenedor:hover .imagen {
+    border-color: #c5dd35;
+    transform: scale(1.05);
+}
+
+/* Nombre */
+.titulo {
+    color: #1a1a2e;
+    font-size: 1.35rem;
+    font-weight: 700;
+    margin: 10px 0 6px 0;
+}
+
+/* Edad */
+.edad {
+    color: #666;
+    font-size: 1rem;
+    margin-bottom: 18px;
+}
+
+/* Estado (Inactivo / Activo) */
+.estado {
+    font-weight: 600;
+    color: white;
+    margin: 15px auto;
+    padding: 12px 20px;
+    border-radius: 50px;
+    background: linear-gradient(135deg, #c5dd35, #d1ff04);
+    display: block;           /* Cambiado a block */
+    width: 86%;              /* Mismo ancho que el botón */
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(76, 175, 80, 0.3);
+    font-size: 1rem;
+}
+
+/* Botón */
+.boton {
+    background: linear-gradient(135deg, #4554f5, #2a3ab8);
+    color: white;
+    border: none;
+    border-radius: 50px;
+    padding: 13px 20px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(69, 84, 245, 0.3);
+    width: 100%;              /* Ya estaba, pero confirmado */
+    margin-top: 8px;
+}
+
+.boton:hover {
+    background: linear-gradient(135deg, #c5dd35, #d1ff04);
+    transform: scale(1.03);
+}
+/* Responsive */
+@media (max-width: 768px) {
+    .contenedor {
+        width: 100%;
+        max-width: 280px;
+    }
+}

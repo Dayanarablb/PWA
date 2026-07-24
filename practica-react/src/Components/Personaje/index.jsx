@@ -1,0 +1,1 @@
+export { PersonajeCard } from './Personaje'

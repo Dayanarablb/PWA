@@ -1,0 +1,1 @@
+export {NosotrosPage} from './Nosotros'

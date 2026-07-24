@@ -1,0 +1,7 @@
+export { Card } from './Card'
+export { Footer } from './Footer'
+export { Header } from './Header'
+export { Layout } from './Layout'
+export { UserCard } from './UserCard'
+export { PersonajeCard, PersonajeCard as PersonaCard } from './Personaje'
+export { CursoCard } from './CursoCard'
